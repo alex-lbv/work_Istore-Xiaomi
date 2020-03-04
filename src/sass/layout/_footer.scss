@@ -213,6 +213,13 @@
     border-radius: 8px;
     font: 600 16px/22px FuturaPT;
     cursor: pointer;
+    background-color: $main-color;
+    box-shadow: none;
+
+    &:hover {
+      background: $main-dark-color;
+      box-shadow: 0px 3px 20px $main-dark-color-opacity-5;
+    }
 
     @include screen(xl) {
       margin: 0 15px 40px;

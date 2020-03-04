@@ -1,13 +1,18 @@
 .banner {
   position: relative;
+  padding: 30px 50px 40px;
   border-radius: 20px;
   overflow: hidden;
+  background-color: $white;
 
   @include screen(xl) {
     text-align: center;
+    height: 390px;
   }
 
   a {
+    position: relative;
+    z-index: 1;
     display: block;
     width: 100%;
     max-width: 140px;
@@ -16,10 +21,18 @@
     text-align: center;
     text-transform: uppercase;
     font: 600 15px/22px FuturaPT;
-    color: $main-dark-color;
-    border-radius: 8px;
+    color: $second-black-color;
+    border-radius: 21px;
     background-color: $white;
     transition: box-shadow .3s, color .1s, background-color .3s, border .3s;
+    border: 1px solid $main-black-color;
+
+    &:hover {
+      color: $white;
+      background: $main-color;
+      box-shadow: 0px 3px 10px $main-color-opacity-2;
+      border-color: transparent;
+    }
 
     @include screen(xl) {
       margin: 0 auto;
@@ -27,24 +40,29 @@
   }
 
   span {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    display: inline-block;
     font: 500 38px/45px FuturaPT;
   }
 
   p {
+    position: relative;
+    z-index: 1;
     margin-bottom: 30px;
     font: normal 16px/24px Roboto;
   }
 
-  &--pink {
-    background: $gradient-pink;
+  img {
+    position: absolute;
+    bottom: 0;
+  }
 
-    @include screen(x) {
-      margin-bottom: 20px;
-    }
-
+  &:first-of-type {
     @include screen(xl) {
-      padding: 40px 35px;
-      height: 390px;
+      margin-bottom: 20px;
+      height: 450px;
     }
 
     @include screen(sm) {
@@ -52,83 +70,10 @@
     }
 
     @include screen(l) {
-      padding: 40px 50px;
       margin-right: 20px;
     }
 
     img {
-      &:first-of-type {
-        position: relative;
-        z-index: 1;
-        margin-bottom: 15px;
-      }
-
-      &:last-of-type {
-        @include screen(l) {
-          position: absolute;
-          bottom: 0;
-          right: 10px;
-          width: 311px;
-          height: 171px;
-        }
-
-        @include screen(xl) {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          margin: auto;
-        }
-      }
-    }
-
-    p {
-      position: relative;
-      z-index: 1;
-      color: $white;
-    }
-
-    a {
-      position: relative;
-      z-index: 1;
-
-      &:hover {
-        color: $white;
-        background-color: $main-color;
-        box-shadow: 0px 3px 10px $main-color-opacity-4;
-        border-color: $white;
-      }
-    }
-  }
-
-  &--white {
-    padding: 30px 50px 40px;
-    background-color: $white;
-
-    @include screen(xl) {
-      height: 390px;
-    }
-
-    a {
-      border: 1px solid $main-dark-color;
-
-      &:hover {
-        color: $white;
-        background-color: $main-color;
-        box-shadow: 0px 3px 10px $main-color-opacity-4;
-        border-color: transparent;
-      }
-    }
-
-    span {
-      margin-bottom: 15px;
-      display: inline-block;
-    }
-
-    img {
-      position: absolute;
-      bottom: 0;
-
       @include screen(xl) {
         width: 100%;
         height: auto;
@@ -139,8 +84,33 @@
       }
 
       @include screen(l) {
-        right: 35px;
-        width: 310px;
+        top: 0;
+        right: 15px;
+        margin: auto;
+        width: 366px;
+      }
+    }
+  }
+
+  &:last-of-type {
+    @include screen(xl) {
+      height: 450px;
+    }
+
+    img {
+      @include screen(xl) {
+        width: 100%;
+        height: auto;
+        max-width: 255px;
+        margin: auto;
+        right: 0;
+        left: 0;
+      }
+
+      @include screen(l) {
+        top: 0;
+        right: 60px;
+        max-width: 240px;
       }
     }
   }

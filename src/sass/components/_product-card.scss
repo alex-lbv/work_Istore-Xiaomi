@@ -63,7 +63,7 @@
 
       &-total {
         font: 600 24px/28px FuturaPT;
-        color: $third-color;
+        color: $second-black-color;
       }
     }
 
@@ -93,13 +93,13 @@
         }
 
         span {
-          color: $green;
+          color: $main-color;
           border-bottom: 1px solid transparent;
           cursor: pointer;
           transition: color .3s;
 
           &:hover {
-            color: $green-2;
+            color: $main-dark-color;
           }
 
           @include screen(xl) {

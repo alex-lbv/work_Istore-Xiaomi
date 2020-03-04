@@ -92,10 +92,11 @@
 
         &:last-of-type {
           a {
-            color: $second-color;
+            color: $green;
+            transition: color .3s;
 
             &:hover {
-              color: $third-color;
+              color: $green-2;
             }
           }
         }
@@ -184,12 +185,12 @@
 
   &__navigation {
     @include screen(l) {
-      margin: 0 20px;
+      margin: 0 30px;
     }
 
     a {
       border-bottom: 1px solid transparent;
-      font: normal 16px/22px FuturaPT;
+      font: 500 16px/22px FuturaPT;
       color: $main-black-color;
       transition: border .3s;
 
@@ -497,7 +498,8 @@
       }
 
       @include screen(l) {
-        max-width: 960px;
+       /*  max-width: 960px; */
+       justify-content: space-between;
         z-index: 5;
       }
     }

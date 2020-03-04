@@ -4,23 +4,23 @@
 		min-width: 230px;
 		max-width: 230px;
 		border-radius: 8px;
-		background: $second-color;
-		box-shadow: 0px 4px 12px $second-color-opacity-4;
+		background: $green;
+		box-shadow: 0px 4px 12px $green-opacity-35;
 		cursor: pointer;
 		transition: background-color .3s, box-shadow .3s;
 	}
 
 	&:hover {
 		@include screen(l) {
-			background: $second-dark-color;
-			box-shadow: 0px 4px 15px $second-color-opacity-7;
+			background: $green-2;
+			box-shadow: 0px 4px 15px $green-4-opacity-7;
 		}
 	}
 
 	&--active {
 		@include screen(l) {
-			background: $second-dark-color;
-			box-shadow: 0px 4px 15px $second-color-opacity-7;
+			background: $green-2;
+			box-shadow: 0px 4px 15px $green-4-opacity-7;
 		}
 	}
 
