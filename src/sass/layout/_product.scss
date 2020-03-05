@@ -287,8 +287,7 @@
         }
 
         &:hover {
-          background: $second-color;
-          box-shadow: 0px 4px 12px $second-color-opacity-4;
+          background: $green-2;
         }
       }
     }
@@ -691,7 +690,8 @@
     white-space: nowrap;
 
     @include screen(xl) {
-      color: $second-color;
+      color: $main-color;
+      border: 1px solid $main-color;
     }
 
 
