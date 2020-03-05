@@ -62,11 +62,11 @@
 
       &:nth-of-type(2) {
         @include screen(xl) {
-          font: 500 16px/24px FuturaPT;
+          font: 300 16px/24px FuturaPT;
         }
 
         @include screen(l) {
-          font: normal 30px/54px FuturaPT;
+          font: 300 30px/54px FuturaPT;
         }
       }
     }
