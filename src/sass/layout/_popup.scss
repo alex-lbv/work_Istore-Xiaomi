@@ -22,7 +22,7 @@
 
   &__header {
     padding: 35px;
-    background: $third-color;
+    background: $main-black-color;
     color: $white;
     border-radius: 24px 24px 0 0;
 
@@ -279,7 +279,7 @@
 
     &-total {
       font: 700 24px/28px Roboto;
-      color: $third-color;
+      color: $main-black-color;
     }
 
     &-sale {
@@ -448,18 +448,20 @@
       .nice-select {
         position: absolute;
         bottom: 20px;
-        background: $second-color-opacity-7 !important;
+        background: $white-opacity-1 !important;
         box-shadow: 0px 2px 7px $black-opacity-05 !important;
         border-radius: 10px !important;
         border: none !important;
         transition: background-color .3s;
 
         &.open {
-          background: $thirs-color-2 !important;
+          background: $black-opacity-3 !important;
+          border: 1px solid $main-color !important;
+          box-shadow: 0px 2px 7px $black-opacity-05 !important;
         }
 
         li:hover {
-          background: $third-color !important;
+          background: $main-black-color !important;
           color: $white !important;
         }
       }
@@ -1033,7 +1035,7 @@
 
         &:hover {
           @include screen (xl) {
-            background: $third-color;
+            background: $main-black-color;
             color: $white-opacity-9;
           }
         }
@@ -1077,8 +1079,8 @@
 
       &.active {
         a {
-          background: $second-color;
-          box-shadow: 0px 4px 12px $second-color-opacity-4;
+          background: $main-color;
+          box-shadow: 0px 4px 12px $main-color-opacity-4;
           color: $white;
         }
       }
@@ -1095,8 +1097,8 @@
       transition: background-color .3s, box-shadow .3s, color .15s;
 
       &:hover {
-        background: $second-color;
-        box-shadow: 0px 4px 12px $second-color-opacity-4;
+        background: $main-color;
+        box-shadow: 0px 4px 12px $main-color-opacity-4;
         color: $white;
       }
     }
