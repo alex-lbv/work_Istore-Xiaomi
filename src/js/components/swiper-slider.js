@@ -292,3 +292,18 @@ $('body').on('click', '.product__description', function () {
   var swiperProductReviews = $('body').find('.description__swiper')[0].swiper;
   swiperProductReviews.update(true);
 });
+
+var swiperPresent = new Swiper('.product__present-swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.product__present-button--next',
+    prevEl: '.product__present-button--prev',
+  },
+  breakpoints: {
+    1250: {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    },
+  },
+});

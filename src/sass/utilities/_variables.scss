@@ -6,6 +6,7 @@ $breakpoint-lg: 1250;
 /* Colors */
 $white: rgba(255, 255, 255, 1);
 $white-opacity-2: rgba(255, 255, 255, .2);
+$white-opacity-6: rgba(255, 255, 255, .6);
 $white-opacity-7: rgba(255, 255, 255, .7);
 $white-opacity-9: rgba(255, 255, 255, .9);
 
@@ -90,6 +91,8 @@ $gray-29: rgba(122, 122, 122, 1);
 $gray-30: rgba(149, 149, 149, 1);
 $gray-31: rgba(224, 224, 224, 1);
 $gray-32: rgba(61, 75, 85, 1);
+$gray-33: rgba(236, 239, 243, 1);
+$gray-34: rgba(228, 232, 235,1);
 
 $main-color: rgba(255, 107, 44, 1);
 $main-color-opacity-9: rgba(255, 107, 44, .9);
@@ -97,6 +100,7 @@ $main-color-opacity-4: rgba(255, 107, 44, .4);
 $main-color-opacity-2: rgba(255, 107, 44, .2);
 $main-color-opacity-1: rgba(255, 107, 44, .1);
 $main-dark-color: rgba(255, 89, 18, 1);
+$main-dark-color-opacity-7: rgba(255, 89, 18, .7);
 $main-dark-color-opacity-5: rgba(255, 89, 18, .5);
 $main-dark-color-opacity-4: rgba(255, 89, 18, .4);
 $main-dark-color-2: rgba(214, 52, 105, 1);
@@ -112,11 +116,9 @@ $dark-blue: rgba(17, 20, 72, 1);
 $yellow: rgba(255, 205, 0, 1);
 $yellow-2: rgba(255, 211, 122, 1);
 $green: rgba(39, 204, 0, 1);
-/* #27CC00 */
 $green-opacity-2: rgba(39, 204, 0, .2);
 $green-opacity-35: rgba(39, 204, 0, .35);
 $green-2: rgba(94, 241, 59, 1);
-/* #5EF13B */
 $green-3: rgba(20, 215, 93, 1);
 $green-4: rgba(67, 254, 22, 1);
 $green-4-opacity-7: rgba(67, 254, 22, .7);
@@ -124,6 +126,7 @@ $green-5: rgba(75, 217, 100, 1);
 $orange: rgba(255, 121, 20, 1);
 $orange-2: rgba(255, 150, 0, 1);
 $blue: rgba(0, 149, 255, 1);
+$violet: rgba(95, 24, 208, 1);
 
 $gradient-pink: linear-gradient(250.77deg, rgba(237, 101, 108, 1) 0%, rgba(223, 92, 145, 1) 99.52%);
 $gradient-pink-2: linear-gradient(360deg, rgba(241, 49, 103, 1) 0%, rgba(247, 149, 201, 1) 99.86%);

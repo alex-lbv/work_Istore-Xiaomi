@@ -74,6 +74,11 @@
       div:first-of-type {
         width: 40px;
         height: 40px;
+        background: $gray-32;
+
+        &::after {
+          display: none;
+        }
 
         svg {
           width: 25px;
@@ -215,6 +220,10 @@
       &--present {
         @include screen(xl) {
           width: 100%;
+        }
+
+        @include screen(l) {
+          position: relative;
         }
       }
 
@@ -365,7 +374,7 @@
 
     &-total {
       font: 600 38px/28px FuturaPT;
-      color: $third-color;
+      color: $main-black-color;
 
       @include screen(xl) {
         align-self: flex-start;
@@ -385,93 +394,144 @@
   }
 
   &__present {
-    @include screen(xl) {
-      padding-left: 20px;
-      width: 100%;
-      overflow-x: scroll;
-
-      &::-webkit-scrollbar {
-        height: 0;
-        opacity: 0;
-        display: none;
-      }
-
-      &::-webkit-scrollbar-button {
-        height: 0;
-        opacity: 0;
-        display: none;
-      }
-
-      &::-webkit-scrollbar-track-piece {
-        height: 0;
-        opacity: 0;
-        display: none;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        height: 0;
-        opacity: 0;
-        display: none;
-      }
-
-      &::-webkit-scrollbar-corner {
-        height: 0;
-        opacity: 0;
-        display: none;
-      }
-
-      &::-webkit-resize {
-        height: 0;
-        opacity: 0;
-        display: none;
-      }
-    }
-
-    li {
-      position: relative;
-      min-width: 116px;
-      min-height: 65px;
-
-      &:not(:last-of-type) {
-        margin-right: 10px;
-      }
-    }
-
-    label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
+    &-swiper {
       position: relative;
       overflow: hidden;
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
-      background: $white;
-      border-radius: 10px;
+      padding-bottom: 20px;
 
-      span {
-        position: relative;
-        z-index: 1;
-        font: 500 14px/16px FuturaPT;
-        width: min-content;
+      & .swiper-slide {
+
+        @include screen(xl) {
+          margin: auto;
+          padding: 0 10px;
+        }
       }
+
+      & .swiper-pagination {
+        @include screen(xl) {
+          bottom: -7px;
+        }
+      }
+
+      & .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #FF6B2C;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      z-index: 1;
+      cursor: pointer;
+      top: 65px;
+      width: 15px;
+      height: 17px;
+      background: url(../img/pic/ico/arrow-gray.svg) no-repeat;
+
+      &:hover {
+        background: url(../img/pic/ico/arrow-orange.svg) no-repeat;
+      }
+
+      &--next {
+        right: -20px;
+      }
+
+      &--prev {
+        left: -20px;
+        transform: rotate(180deg);
+      }
+    }
+
+    &-image-wrap {
+      margin-right: 15px;
+      max-width: 100px;
+      max-height: 100px;
+      border: 1px solid #E9E9E9;
+      border-radius: 10px;
+      background: #ffffff;
+      overflow: hidden;
 
       img {
-        margin-right: 10px;
+        width: 100%;
       }
     }
 
-    input:checked+label {
-      border: 1px solid $main-color;
-      box-shadow: 0px 2px 8px $black-opacity-1;
-      border-radius: 10px;
+    &-name {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      max-height: 50px;
+      margin-bottom: 10px;
+      font: normal 16px/20px FuturaPT;
+      color: #333333;
+
+      @include screen(l) {
+        padding-right: 50px;
+      }
     }
 
-    &-label {
-      &--disable {
-        opacity: .5;
-        pointer-events: none;
+    &-btn {
+      padding: 6px 15px 7px;
+      font: 500 14px/22px FuturaPT;
+      color: #FF6B2C;
+      background: #FFFFFF;
+      border: 1px solid #EAEAEA;
+      border-radius: 8px;
+      box-shadow: none;
+
+      &:hover {
+        border-color: #FF6B2C;
+        background-color: #FF6B2C;
+        box-shadow: none;
+      }
+
+      &--active {
+        background: rgb(228, 227, 227);
+        color: #333333;
+
+        &:hover {
+          background: rgb(228, 227, 227);
+          color: #333333;
+          box-shadow: none;
+          border-color: rgb(228, 227, 227);
+        }
+      }
+
+      @include screen(xl) {
+        max-width: 120px;
+      }
+
+      @include screen(l) {
+        max-width: 140px;
+      }
+
+      &::before {
+        @include screen(xl) {
+          content: 'Добавить';
+        }
+
+        @include screen(l) {
+          content: 'Добавить к заказу';
+        }
+      }
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    &-price {
+      &-old {
+        font: 700 12px/14px Roboto;
+        text-decoration-line: line-through;
+        color: rgba(48, 55, 61, .5);
+      }
+
+      &-total {
+        font: 700 14px/16px Roboto;
+        color: #FF6B2C;
       }
     }
   }

@@ -13,7 +13,8 @@
 		&::after {
 			content: "";
 			position: absolute;
-			background: url('../img/pic/bg/return-policy.svg') no-repeat;
+			background: url('../img/pic/bg/return-policy.jpg') no-repeat;
+			background-size: contain;
 
 			@include screen(xl) {
 				top: 60px;

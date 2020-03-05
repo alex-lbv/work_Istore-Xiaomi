@@ -23,33 +23,59 @@
         border-radius: 20px;
       }
 
-      &--iphone {
+      &--phone {
         @include screen(l) {
-          background-image: url("../img/pic/bg/catalog-header.jpg");
-          background-position: right;
+          background: url("../img/pic/bg/catalog-header.jpg") no-repeat, $gray-33;
+          background-position: 650px;
           background-size: contain;
         }
       }
 
-      &--ipad {
+      &--home {
         @include screen(l) {
-          background-image: url("../img/pic/bg/catalog-header-2.jpg");
+          background: url("../img/pic/bg/catalog-header-2.jpg") no-repeat, $white;
+          background-size: contain;
           background-position: right;
+        }
+      }
+
+      &--tv {
+        @include screen(l) {
+          background: url("../img/pic/bg/catalog-header-3.jpg") no-repeat, $violet;
+          background-size: contain;
+          background-position: right;
+        }
+
+        .breadcrumbs.uk-subnav>*>:first-child {
+          @include screen(l) {
+            color: $white !important;
+          }
+        }
+
+        .breadcrumbs.uk-subnav>.uk-active>a:hover {
+          @include screen(l) {
+            color: $white-opacity-6 !important;
+          }
+        }
+
+        .title {
+          @include screen(l) {
+            color: $white;
+          }
+        }
+      }
+
+      &--gadjets {
+        @include screen(l) {
+          background: url("../img/pic/bg/catalog-header-4.jpg") no-repeat, $white;
+          background-position: 700px;
           background-size: contain;
         }
       }
 
-      &--macbook {
+      &--sport {
         @include screen(l) {
-          background-image: url("../img/pic/bg/catalog-header-3.jpg");
-          background-size: 980px 80px;
-          background-position: 600px 40px;
-        }
-      }
-
-      &--iwatch {
-        @include screen(l) {
-          background-image: url("../img/pic/bg/catalog-header-4.jpg");
+          background: url("../img/pic/bg/catalog-header-5.jpg") no-repeat, $gray-34;
           background-position: right;
           background-size: contain;
         }
@@ -57,8 +83,8 @@
 
       &--accessories {
         @include screen(l) {
-          background-image: url("../img/pic/bg/catalog-header-5.jpg");
-          background-position: right;
+          background: url("../img/pic/bg/catalog-header-6.jpg") no-repeat, #E7E6E4;
+          background-position: 700px;
           background-size: contain;
         }
       }
@@ -113,7 +139,6 @@
       background-color: $main-color;
       color: $white;
       border-color: $main-color;
-      box-shadow: 0px 6px 30px $main-dark-color-opacity-4;
     }
   }
 
@@ -122,8 +147,13 @@
       padding-left: 15px;
 
       div:first-of-type {
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
       }
 
       div:last-of-type {
@@ -193,7 +223,7 @@
         transition: background-color .3s, color .15s;
 
         &:hover {
-          background-color: $third-color;
+          background-color: $gray-32;
           color: $white;
         }
       }

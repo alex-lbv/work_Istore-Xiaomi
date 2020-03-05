@@ -186,7 +186,7 @@
         &--cart {
           min-height: 220px;
           color: $white-opacity-7;
-          background: $third-color;
+          background: $main-black-color;
 
           .account__container-link {
             @include screen(xl) {
@@ -292,7 +292,7 @@
         &-header {
           padding: 20px 25px;
           color: $white;
-          background: $third-color;
+          background: $main-black-color;
           border-radius: 15px;
 
           span {

@@ -217,12 +217,12 @@
       }
 
       &:last-of-type {
-        background: $second-color;
-        box-shadow: 0px 4px 12px $second-color-opacity-4;
+        background: $main-color;
+        box-shadow: 0px 4px 12px $main-color-opacity-4;
 
         &:hover {
-          background: $second-dark-color;
-          box-shadow: 0px 4px 15px $second-color-opacity-7;
+          background: $main-dark-color;
+          box-shadow: 0px 4px 15px $main-dark-color-opacity-7;
         }
       }
     }

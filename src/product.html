@@ -143,32 +143,67 @@
             </div>
 
             <div class="product__container product__container--present">
-              <span class="checkout__container-title uk-margin-small-bottom uk-padding-left@s">Выберите 2 подарка</span>
-              <ul class="product__present uk-flex">
-                <li>
-                  <input id="v1" class="uk-hidden" type="checkbox" name="v">
-                  <label class="product__present-label" for="v1">
-                    <img src="img/temp/product-present-1.svg" width="22" height="41" alt="">
-                    <span>Защитное стекло</span>
-                  </label>
-                </li>
+              <span class="checkout__container-title uk-margin-small-bottom uk-padding-left@s">Добавить к заказу</span>
+              <!-- Swiper -->
+              <div class="product__present-swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide uk-flex uk-flex-middle">
+                    <a href="#" class="product__present-image-wrap">
+                      <img src="img/temp/present.jpg" alt="">
+                    </a>
 
-                <li>
-                  <input id="v2" class="uk-hidden" type="checkbox" name="v">
-                  <label class="product__present-label" for="v2">
-                    <img src="img/temp/product-present-2.svg" width="28" height="41" alt="">
-                    <span>Чехол</span>
-                  </label>
-                </li>
+                    <div class="uk-flex uk-flex-column">
+                      <a href="#" class="product__present-name">Смарт-часы Samsung Galaxy Watch Active 2 44mm</a>
+                      <div class="uk-flex uk-flex-middle">
+                        <div class="uk-flex uk-flex-column uk-margin-right@l uk-margin-small-right@s">
+                          <span class="product__present-price-old">17990 ₽</span>
+                          <span class="product__present-price-total">15 990 ₽</span>
+                        </div>
+                        <button class="product__present-btn product__present-btn--active btn"></button>
+                      </div>
+                    </div>
+                  </li>
 
-                <li>
-                  <input id="v3" class="uk-hidden" type="checkbox" name="v">
-                  <label class="product__present-label" for="v3">
-                    <img src="img/temp/product-present-3.svg" width="30" height="34" alt="">
-                    <span>Скидка</span>
-                  </label>
-                </li>
-              </ul>
+                  <li class="swiper-slide uk-flex uk-flex-middle">
+                    <a href="#" class="product__present-image-wrap">
+                      <img src="img/temp/present.jpg" alt="">
+                    </a>
+
+                    <div class="uk-flex uk-flex-column">
+                      <a href="#" class="product__present-name">Смарт-часы Samsung Galaxy Watch Active 2 44mm</a>
+                      <div class="uk-flex uk-flex-middle">
+                        <div class="uk-flex uk-flex-column uk-margin-right@l uk-margin-small-right@s">
+                          <span class="product__present-price-old">17990 ₽</span>
+                          <span class="product__present-price-total">15 990 ₽</span>
+                        </div>
+                        <button class="product__present-btn btn"></button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="swiper-slide uk-flex uk-flex-middle">
+                    <a href="#" class="product__present-image-wrap">
+                      <img src="img/temp/present.jpg" alt="">
+                    </a>
+
+                    <div class="uk-flex uk-flex-column">
+                      <a href="#" class="product__present-name">Смарт-часы Samsung Galaxy Watch Active 2 44mm</a>
+                      <div class="uk-flex uk-flex-middle">
+                        <div class="uk-flex uk-flex-column uk-margin-right@l uk-margin-small-right@s">
+                          <span class="product__present-price-old">17990 ₽</span>
+                          <span class="product__present-price-total">15 990 ₽</span>
+                        </div>
+                        <button class="product__present-btn btn"></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="product__present-button product__present-button--next uk-visible@l"></div>
+              <div class="product__present-button product__present-button--prev uk-visible@l"></div>
             </div>
           </div>
         </div>
@@ -710,7 +745,7 @@
       <li class="product__description uk-open">
         <a class="uk-accordion-title" href="#">Описание товара</a>
         <div class="uk-accordion-content">
-          //= components/descriptions/description--iphonexsmax.html
+          //= components/land.html
         </div>
       </li>
 
