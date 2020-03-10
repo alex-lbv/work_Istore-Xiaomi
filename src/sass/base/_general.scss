@@ -220,6 +220,12 @@ button {
   }
 }
 
+.options .option_link.active,
+.options .option_link:focus,
+.options .option_link:hover {
+  background-color: $main-color !important;
+}
+
 .position-right {
   &\@l {
     @include screen(l) {
