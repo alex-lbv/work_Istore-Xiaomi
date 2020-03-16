@@ -589,7 +589,7 @@
 
         &:last-of-type {
           &>a {
-            @include scale(l) {
+            @include screen(l) {
               padding: 0 0 0 31px;
             }
           }
